@@ -1,0 +1,175 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    overflow: visible;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    /* background-image: url("../resources/background.jpg"); */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Here comes my changes */
+
+header {
+    margin-bottom: 3%;
+    margin-left: 14%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: dimgrey;
+}
+
+header h1 {
+    font-size: 400%;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 13%;
+}
+
+nav li {
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 0; margin: 0;
+}
+
+nav li:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#activepage {
+    background-color: darkgreen;
+}
+
+#activepage:hover {
+    background-color: red;
+}
+
+nav a { 
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 3%; 
+}
+
+#introduction ,#content {
+    margin-left: 14%;
+}
+
+#sidenav {
+    height: 100%;
+    width: 13%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:black;
+    overflow-x: hidden;
+    padding-bottom: 2%;
+    overflow-y: auto;
+}
+
+#sidenav a {
+    padding: 10% 10% 5% 5%;
+    text-decoration: none;
+    font-size: 25px;
+    color: dimgrey;
+    display: block;
+}
+
+#sidenav a:hover {
+    color: white;
+}
+
+footer {
+    padding-top: 3%;
+    margin-left: 14%
+}
+
+hr {
+    margin-left: -1%;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+#introduction h1 {
+    text-decoration: underline;
+    margin-bottom: 3%;
+}
+
+#introduction figure {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+    margin-bottom: 3%;
+}
+#content {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+
+figure figcaption {
+    text-align: center;
+}
+#content figure {
+    width: 250px;
+    height: 200px;
+}
+
+#content figure img {
+    width:  100%;
+    height: 100%;
+}
+
+
+
+
