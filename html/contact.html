@@ -1,5 +1,5 @@
-<!DOCTYPE html5>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,6 @@
         <nav>
             <ul >
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
                 <li id="activepage"><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
@@ -50,21 +49,21 @@
         
         <div id="contact">
             <h3>With this tool you can contact me:</h3>
-            <form>
+            <form onkeyup="testIfEmpty()">
                 <br><br>
-                <label for="contactfirstname">First name:</label>
+                <label for="name">Name:</label>
                 <br><br>
-                <input type="text" id="contactfirstname" name="firstname" placeholder="Enter your name">
+                <input type="text" id="name" name="name" placeholder="Enter your name">
                 <br><br>
-                <label for="contactemail">E-mail:</label>
+                <label for="email">E-mail:</label>
                 <br><br>
-                <input type="text" id="contactemail" name="email" placeholder="Enter your email">
+                <input type="text" id="email" name="email" placeholder="Enter your email">
                 <br><br>
-                <label for="contactmessage">Message:</label>
+                <label for="message">Message:</label>
                 <br><br>
-                <textarea id="contactmessage" name="message" cols="33" rows="10" placeholder="Enter your message here" style="resize:none"></textarea>
+                <textarea id="message" name="message" cols="33" rows="10" placeholder="Enter your message here" style="resize:none"></textarea>
                 <br><br>
-                <input id="submitbutton" type="submit" value="SEND" disabled>
+                <button id="submitbutton" onclick="return checkFields()" disabled>SEND</button>
             </form> 
         </div>
         <footer>

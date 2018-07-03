@@ -62,7 +62,7 @@ header h1 {
 
 nav ul {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     margin-left: 13%;
 }
 
@@ -149,7 +149,7 @@ hr {
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
     justify-content: space-around;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 figure figcaption {
@@ -182,6 +182,13 @@ label {
 #submitbutton {
     display: block;
     margin: 0 auto;
+}
+#myImage {
+    height: 100%;
+    width: 60%;
+}
+#myWords {
+    text-align: center;
 }
 
 
